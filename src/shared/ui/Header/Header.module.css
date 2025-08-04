@@ -1,6 +1,5 @@
 .container {
-  display: grid;
-  grid-template-areas: 'header';
+  grid-area: header;
 
   width: 100%;
   max-width: 144rem;
