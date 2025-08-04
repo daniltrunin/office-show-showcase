@@ -1,10 +1,19 @@
 // стили
 import styles from './Header.module.css';
 
-// ui компоненты
+// ui components
 import Button from '@shared/ui/Button/Button';
 
+// context
+import { useTheme } from '../../lib/theme/ThemeContext';
+
 export default function Header() {
+  const { theme, setTheme } = useTheme();
+
+  const handleToggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
     <header className={styles.container}>
       <div className={styles.wrapper}>
@@ -13,7 +22,7 @@ export default function Header() {
           <p className={styles.subtitle}>Everything you need to know about The Office</p>
         </section>
         <section className={styles.controls}>
-          <Button text="Switch theme" />
+          <Button onClick={handleToggleTheme} text="Switch theme" />
         </section>
       </div>
     </header>

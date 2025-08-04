@@ -2,19 +2,24 @@
 import './styles/App.css';
 
 // external libs imports
-import {BrowserRouter, Routes, Route} from 'react-router';
+import { BrowserRouter, Routes, Route } from 'react-router';
 
 // views
 import DesktopHomeView from '@pages/Desktop/DesktopHomeView/DesktopHomeView';
 
+// providers
+import { ThemeProvider } from '@shared/lib/theme/ThemeProvider';
+
 function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<DesktopHomeView/>}/>
-            </Routes>
-        </BrowserRouter>
-    );
+  return (
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<DesktopHomeView />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
 }
 
 export default App;

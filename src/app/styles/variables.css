@@ -1,13 +1,4 @@
 :root {
-  /* тёмные стили */
-
-  /* бэкграунд */
-  --dark-background-color: #101828;
-
-  /* шрифт */
-  --dark-font-color-title: #ffffff;
-  --dark-font-color-subtitle: #98a2b3;
-
   /* кнопка primary */
   /* бэкграунд */
   --primary-button-background-color: #0040c1;
@@ -22,4 +13,24 @@
   /* кнопка primary hover */
   /* бэкграунд */
   --primary-button-hover-background-color: #154fef;
+}
+
+/* светлые стили */
+:root[data-theme='light'] {
+  /* бэкграунд */
+  --primary-background-color: #ffffff;
+
+  /* шрифт */
+  --primary-font-color: #101828;
+  --secondary-font-color: #667085;
+}
+
+/* тёмные стили */
+:root[data-theme='dark'] {
+  /* бэкграунд */
+  --primary-background-color: #101828;
+
+  /* шрифт */
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #98a2b3;
 }

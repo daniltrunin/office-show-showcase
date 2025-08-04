@@ -2,10 +2,15 @@
 import styles from './Button.module.css';
 
 // типизация
-type TypeButton = {
+type TypeButtonProps = {
   text: string;
+  onClick?: () => void;
 };
 
-export default function Button(props: TypeButton) {
-  return <button className={styles.button}>{props.text}</button>;
+export default function Button(props: TypeButtonProps) {
+  return (
+    <button onClick={props.onClick} className={styles.button}>
+      {props.text}
+    </button>
+  );
 }

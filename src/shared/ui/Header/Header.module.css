@@ -4,9 +4,11 @@
   width: 100%;
   /* max-width: 144rem; */
 
-  background-color: var(--dark-background-color);
+  background-color: var(--primary-background-color);
 
   padding: 2.4rem 3.2rem;
+
+  transition: background 0.3s ease;
 }
 
 .wrapper {
@@ -26,14 +28,14 @@
 }
 
 .title {
-  color: var(--dark-font-color-title);
+  color: var(--primary-font-color);
   font-size: 2.4rem;
   font-weight: medium;
   line-height: 120%;
 }
 
 .subtitle {
-  color: var(--dark-font-color-subtitle);
+  color: var(--secondary-font-color);
   font-size: 1.2rem;
   font-weight: normal;
   line-height: 120%;
