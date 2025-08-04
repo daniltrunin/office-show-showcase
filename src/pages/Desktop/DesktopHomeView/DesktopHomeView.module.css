@@ -3,5 +3,5 @@
   grid-template-areas: 'header';
 
   width: 100%;
-  max-width: 144rem;
+  /* max-width: 144rem; */
 }
