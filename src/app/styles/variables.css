@@ -7,4 +7,19 @@
   /* шрифт */
   --dark-font-color-title: #ffffff;
   --dark-font-color-subtitle: #98a2b3;
+
+  /* кнопка primary */
+  /* бэкграунд */
+  --primary-button-background-color: #0040c1;
+  /* форма */
+  --primary-button-padding: 0.65rem 1.6rem;
+  --primary-button-border-radius: 0.4rem;
+  /* шрифт  */
+  --primary-button-font-color: #ffffff;
+  --primary-button-font-size: 1.2rem;
+  --primary-button-font-weight: 600;
+
+  /* кнопка primary hover */
+  /* бэкграунд */
+  --primary-button-hover-background-color: #154fef;
 }

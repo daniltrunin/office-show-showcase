@@ -1,0 +1,17 @@
+.button {
+  background: var(--primary-button-background-color);
+
+  padding: var(--primary-button-padding);
+
+  border-radius: var(--primary-button-border-radius);
+
+  color: var(--primary-button-font-color);
+  font-size: var(--primary-button-font-size);
+  font-weight: var(--primary-button-font-weight);
+  line-height: 160%;
+
+  transition: background 0.3s ease;
+  &:hover {
+    background: var(--primary-button-hover-background-color);
+  }
+}
