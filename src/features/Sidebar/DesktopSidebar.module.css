@@ -30,6 +30,10 @@
 .item,
 .itemActive {
   transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  column-gap: 0.8rem;
 }
 
 .item {

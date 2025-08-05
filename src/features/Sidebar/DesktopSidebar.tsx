@@ -16,12 +16,14 @@ export default function DesktopSidebar() {
         <h2 className={styles.title}>Resourses</h2>
         <ul className={styles.list}>
           {SIDEBAR_ITEMS.map((item: TypeSidebarItem) => {
+            const Icon = item.icon;
             return (
               <li
                 onClick={() => setActiveId(item.id)}
                 key={item.id}
                 className={item.id === activeId ? `${styles.itemActive}` : styles.item}
               >
+                <Icon />
                 {item.title}
               </li>
             );
