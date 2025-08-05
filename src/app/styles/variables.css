@@ -23,6 +23,12 @@
   /* шрифт */
   --primary-font-color: #101828;
   --secondary-font-color: #667085;
+
+  /* sidebar items */
+  --sidebar-item-font-color: #667085;
+  --sidebar-item-active-font-color: #101828;
+  --sidebar-item-active-background-color: #f8fafc;
+  --sidebar-item-active-border-color: #eaecf0;
 }
 
 /* тёмные стили */
@@ -33,4 +39,10 @@
   /* шрифт */
   --primary-font-color: #ffffff;
   --secondary-font-color: #98a2b3;
+
+  /* sidebar items */
+  --sidebar-item-font-color: #98a2b3;
+  --sidebar-item-active-font-color: #ffffff;
+  --sidebar-item-active-background-color: #1d2939;
+  --sidebar-item-active-border-color: #344054;
 }

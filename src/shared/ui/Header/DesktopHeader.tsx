@@ -1,5 +1,5 @@
 // стили
-import styles from './Header.module.css';
+import styles from './DesktopHeader.module.css';
 
 // ui components
 import Button from '@shared/ui/Button/Button';
@@ -7,7 +7,7 @@ import Button from '@shared/ui/Button/Button';
 // context
 import { useTheme } from '../../lib/theme/ThemeContext';
 
-export default function Header() {
+export default function DesktopHeader() {
   const { theme, setTheme } = useTheme();
 
   const handleToggleTheme = () => {

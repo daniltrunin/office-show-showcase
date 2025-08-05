@@ -1,0 +1,60 @@
+.container {
+  grid-area: sidebar;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--primary-background-color);
+
+  padding: 1.2rem 1.6rem;
+
+  transition: background 0.3s ease;
+}
+
+.title {
+  padding: 0.9rem 1.6rem;
+
+  color: var(--secondary-font-color);
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 160%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+/* анимация */
+.item,
+.itemActive {
+  transition: all 0.3s ease;
+}
+
+.item {
+  padding: 0.9rem 1.6rem;
+
+  color: var(--sidebar-item-font-color);
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 160%;
+
+  cursor: pointer;
+}
+
+.itemActive {
+  padding: 0.9rem 1.6rem;
+
+  color: var(--sidebar-item-active-font-color);
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 160%;
+
+  cursor: pointer;
+
+  /* добавляем */
+  background-color: var(--sidebar-item-active-background-color);
+  outline: 1px solid var(--sidebar-item-active-border-color);
+  border-radius: 0.4rem;
+}

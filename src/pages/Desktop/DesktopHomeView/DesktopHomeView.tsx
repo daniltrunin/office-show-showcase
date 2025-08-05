@@ -2,12 +2,14 @@
 import styles from './DesktopHomeView.module.css';
 
 // components
-import Header from '@shared/ui/Header/Header';
+import DesktopHeader from '@shared/ui/Header/DesktopHeader';
+import DesktopSidebar from '@features/Sidebar/DesktopSidebar';
 
 export default function DesktopHomeView() {
   return (
     <main className={styles.container}>
-      <Header />
+      <DesktopSidebar />
+      <DesktopHeader />
     </main>
   );
 }
