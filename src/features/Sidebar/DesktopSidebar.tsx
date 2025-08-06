@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { SIDEBAR_ITEMS, TypeSidebarItem } from '@shared/const/sidebar';
 
 export default function DesktopSidebar() {
-  const [activeId, setActiveId] = useState<string>('1');
+  const [activeId, setActiveId] = useState<string>('0');
 
   return (
     <aside className={styles.container}>
