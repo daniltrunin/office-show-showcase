@@ -1,15 +1,16 @@
 // стили
 import styles from './DesktopSidebar.module.css';
 
-// react imports
-import { useState } from 'react';
-
 // external imports
 import { SIDEBAR_ITEMS, TypeSidebarItem } from '@shared/const/sidebar';
 
-export default function DesktopSidebar() {
-  const [activeId, setActiveId] = useState<string>('0');
+// active id type
+type TypeActiveId = {
+  activeId: string;
+  setActiveId: (id: string) => void;
+};
 
+export default function DesktopSidebar({ activeId, setActiveId }: TypeActiveId) {
   return (
     <aside className={styles.container}>
       <nav>
