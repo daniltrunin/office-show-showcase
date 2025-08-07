@@ -3,7 +3,7 @@
   grid-template-areas:
     'header header'
     'sidebar main'
-    'sidebar footer';
+    'footer footer';
   grid-template-columns: 24.8rem 1fr;
   grid-template-rows: auto 1fr;
 
